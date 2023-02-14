@@ -25,4 +25,18 @@ void main() {
   // final varibales, 한 번 선언 후 바꿀 수 없다. js의 const와 같다
   final lee = 'lee';
   final String kee = 'kee'; // 타입을 명시적으로 표현
+  
+  // late는 데이터 없이 선언만 해주는 것이다.
+  late final String str_data;
+  // 데이터를 넣기 전에는 접근을 막는다. API 작업에서 많이 사용할 것
+  // print(str_data);
+  str_data = '후후';
+  print(str_data);
+  
+  // const, js ts의 const와는 다르다
+  // compile-time constant 컴파일할 때 어떤 값인지 알고있다면 const
+  // API작업과 같이 들어오는 값이 아직 불확실하다면 final이다.
+  const max_allowed_price = 30000;
+  // const API = blabla(); not allowed
+  
 }
