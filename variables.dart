@@ -39,4 +39,11 @@ void main() {
   const max_allowed_price = 30000;
   // const API = blabla(); not allowed
   
+  
+  //data type: 모든 것이 객채로 이뤄져있다.
+  // String, bool, int, double, num(int, double 가능)
+  
+  var _list1 = [1,2,3,4];
+  List<int> _list2 = [1,2,3,4];
+  print(_list1.last);
 }
