@@ -46,4 +46,50 @@ void main() {
   var _list1 = [1,2,3,4];
   List<int> _list2 = [1,2,3,4];
   print(_list1.last);
+  print(_list2.reversed);
+  
+// collection if  
+  var is_true = true;
+  var _list3 = [1,2,3,4,if(is_true) 5,];
+//   if(is_true){
+//     _list3.add(5);
+//   }
+  print(_list3);
+  
+  
+  // string interpolation, collection for ** UI를 만들 때 완전 유용하다 ** if는 비/로그인 유저 UI
+  // string interpolation
+  var name_1 = 'nico';
+  var age_1 = 10;
+  var greeting = 'hello everyone, my name is $name_1, and I\'m ${age_1 + 3}';
+  print(greeting);
+    
+  
+  // collection for, 
+  var listOF = ['nico', 'kim'];
+  var listNF = [
+    'lee',
+    'daphne',
+    for(var friend in listOF) "OF $friend",
+  ];  
+  print(listNF);
+  
+  
+  // Maps
+  var palyer = {
+    'name': 'kim',
+    'xp': 10.01,
+    'superpoewer': false,
+  };
+  Map<Object, Object> palyer_2 = {
+    1: 'zzz',
+    'name': 123,
+  };
+  Map<List<int>, Object> palyer_3 = {
+  };
+  
+  // Sets
+  var set_1 = {1,2,3,4,1,2,3,};
+  
+  print(set_1);
 }
